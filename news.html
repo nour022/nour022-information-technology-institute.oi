@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/news.css" />
+    <title>information-technology-institute</title>
+  </head>
+  <body id="start-site">
+    <header>
+      <!-- ------ Erste Teil Menu ------ -->
+      <div class="menu_i">
+        <div class="abouticons">...</div>
+        <div class="sing_in">
+          <a href="auth/Registrieren.html"
+            ><span class="material-symbols-outlined"> lock </span> Staff only</a
+          >
+          <a href="auth/login.html"
+            ><span class="material-symbols-outlined"> lock </span>Sign in</a
+          >
+        </div>
+      </div>
+      <nav>
+        <div class="logo-box">
+          <img src="assets/img/logo.png" alt="logo" width="70" height="70" />
+          <p>
+            information technology <br />
+            institute
+          </p>
+        </div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="taster"
+              >Programs
+              <span class="material-symbols-outlined"> expand_more </span></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="#"
+                  ><img src="assets/img/js.png" alt="js" />
+                  <p>JavaScript</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/html.png" alt="html" />
+                  <p>HTML5</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/css.png" alt="css" />
+                  <p>CSS</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/php.png" alt="php" />
+                  <p>PHP</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/sql.png" alt="" />
+                  <p>SQL</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/c.png" alt="" />
+                  <p>C#</p></a
+                >
+              </li>
+            </ul>
+
+            <script>
+              var taster = document.getElementsByClassName("taster")[0];
+              var dropdowns = document.getElementsByClassName("dropdown");
+
+              taster.addEventListener("click", function () {
+                for (var i = 0; i < dropdowns.length; i++) {
+                  if (dropdowns[i].style.display === "none") {
+                    dropdowns[i].style.display = "flex";
+                  } else {
+                    dropdowns[i].style.display = "none";
+                  }
+                }
+              });
+            </script>
+          </li>
+          <li><a href="news.html">IT|News</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ------------BESCHREIBUNG------------ -->
+    <div class="news-box">
+      <h1>IT|News</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est rem
+        consequuntur ab laborum earum exercitationem quae sit soluta incidunt,
+        laudantium molestiae aspernatur quam temporibus veritatis necessitatibus
+        blanditiis officia iusto?
+      </p>
+    </div>
+
+    <!-- ------------ BESCHREIBUNG und Bilder ------------ -->
+    <div class="object">
+      <div class="text-box">
+        <h1>test</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus
+          ipsum odio debitis dolor eos, quo error rem tenetur distinctio,
+          laudantium ab illum quisquam fugiat, et animi rerum repellendus?
+          Quidem.
+        </p>
+        <!-- <input type="submit" value="lese mehr" /> -->
+        <button>
+          Lese mehr
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
+      </div>
+      <div class="bild-box1 bs"></div>
+    </div>
+    <div class="object">
+      <div class="bild-box2 bs"></div>
+      <div class="text-box">
+        <h1>test</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus
+          ipsum odio debitis dolor eos, quo error rem tenetur distinctio,
+          laudantium ab illum quisquam fugiat, et animi rerum repellendus?
+          Quidem.
+        </p>
+        <!-- <input type="submit" value="lese mehr" /> -->
+        <button>
+          Lese mehr
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
+      </div>
+    </div>
+    <div class="object">
+      <div class="text-box">
+        <h1>test</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus
+          ipsum odio debitis dolor eos, quo error rem tenetur distinctio,
+          laudantium ab illum quisquam fugiat, et animi rerum repellendus?
+          Quidem.
+        </p>
+        <!-- <input type="submit" value="lese mehr" /> -->
+        <button>
+          Lese mehr
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
+      </div>
+      <div class="bild-box3 bs"></div>
+    </div>
+
+    <!------- footer ------->
+    <footer>
+      <div></div>
+      <div class="box">
+        Contact us <br />
+        <a href="#"
+          ><span class="material-symbols-outlined"> home_pin </span>
+          Deutschland, Aleyzer str. 167 ,67549 Worms</a
+        >
+        <a href="#"
+          ><span class="material-symbols-outlined"> call </span> +(000)000000</a
+        >
+        <a href="#"
+          ><span class="material-symbols-outlined"> mail </span>
+          email@gmail.com</a
+        >
+      </div>
+      <div>
+        Follow us <br />
+        <div class="scozialM">
+          <a href="#"
+            ><img src="assets/img/facebook-icon.png" alt="" width="15"
+          /></a>
+
+          <a href="#"
+            ><img src="assets/img/instagram-icon.png" alt="" width="15"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!------- all script ------->
+    <script src="assets/js/silder.js"></script>
+  </body>
+</html>

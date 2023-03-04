@@ -1,0 +1,417 @@
+/* --------Body style-------- */
+#start-site {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "slider slider "
+    "d1 d2 "
+    "d3 d4"
+    "cart cart "
+    "bewertun-container bewertun-container"
+    "Partners Partners "
+    "Info-Map Info-Map "
+    "footer footer ";
+}
+/* --------main style-------- */
+main {
+  grid-area: slider;
+}
+.mySlides > img {
+  width: 100%;
+  height: 50vh;
+}
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+#test {
+  display: none;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ------- INFO Boxs ------- */
+.d1 {
+  grid-area: d1;
+  background-color: rgb(28, 49, 61);
+}
+.d2 {
+  grid-area: d2;
+  background-color: rgb(32, 57, 71);
+}
+.d3 {
+  grid-area: d3;
+  background-color: rgb(37, 66, 82);
+}
+.d4 {
+  grid-area: d4;
+  background-color: rgb(41, 74, 92);
+}
+.d1:hover,
+.d2:hover,
+.d3:hover,
+.d4:hover {
+  transform: scale(1.02);
+}
+
+body > div {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.7rem;
+}
+body > div > .material-symbols-outlined {
+  font-size: 2rem;
+  font-weight: 900;
+}
+/* -------- all info-container news container-------- */
+
+.info-container {
+  grid-area: cart;
+  margin-bottom: 25px;
+  padding: 0 5%;
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "haupt-img haupt-img";
+  align-content: center;
+  height: 50vh;
+}
+.info-container > h1 {
+  color: var(--ancer_hover);
+  margin-bottom: 5px;
+}
+.haupt-cart {
+  grid-area: haupt-img;
+  color: var(--backG-Color);
+}
+
+.info-container > h1 {
+  grid-area: h1;
+
+  margin-bottom: 5px;
+}
+.haupt-cart {
+  width: 100%;
+
+  grid-area: haupt-img;
+  color: var(--backG-Color);
+}
+
+.haupt-cart > img {
+  width: 100%;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.middle-cort1 {
+  display: none;
+}
+/* --------Bewertung info box -------- */
+
+.bewertun-container {
+  color: white !important;
+  background-image: url("../img/slider2.png");
+  grid-area: bewertun-container;
+  color: var(--fontColorW);
+  text-align: center;
+  grid-area: bewertun-container;
+  display: flex;
+  flex-flow: row wrap;
+  background-size: 100% 100%;
+  color: var(--fontColorW);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* filter: brightness(50%); */
+  margin-bottom: 10px;
+  z-index: -10;
+}
+.links {
+  display: flex;
+  flex-flow: row wrap;
+}
+.links > p {
+  text-align: center;
+  flex-basis: 33.33%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 5px;
+  width: 100%;
+}
+.links > p > .material-symbols-outlined {
+  font-size: 4rem;
+  width: 100%;
+}
+.recht > h1 {
+  font-size: 5rem;
+}
+/*-----------Our Partnes--------------*/
+.partners-container {
+  color: var(--ancer_hover);
+  padding: 0% 10%;
+  margin-bottom: 20px;
+  grid-area: Partners;
+  text-align: center;
+}
+.partners-container > p {
+  color: var(--backG-Color);
+}
+.p_logo {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+}
+.p_logo > p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 5px;
+  width: 100%;
+}
+.p_logo > p > .material-symbols-outlined {
+  font-size: 5rem;
+  width: 100%;
+  color: var(--backG-Color);
+}
+
+/* -------- contact Box style -------- */
+.info-container-contact {
+  grid-area: Info-Map;
+  padding: 0px 10%;
+  margin-bottom: 15px;
+  height: 80vh;
+}
+.inner-box {
+  background: linear-gradient(var(--backG-Color), transparent),
+    linear-gradient(to top left, var(--ancer_hover), transparent),
+    linear-gradient(to top right, var(--fontColorW), transparent);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.map {
+  flex-basis: 100%;
+}
+
+.mail-box {
+  flex-basis: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+iframe {
+  border-bottom-left-radius: 10px;
+  height: 30vh;
+}
+
+form {
+  width: 80%;
+}
+form > h1 {
+  color: var(--ancer_hover);
+}
+form > * {
+  margin-bottom: 10px;
+}
+form > button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: var(--fontColorW);
+  border-radius: 5px;
+  background-color: var(--ancer_hover);
+  box-shadow: 29px 29px 58px #bebebe, -29px -29px 58px #ffffff;
+}
+.b-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: 41px 41px 82px #cecece, -41px -41px 82px #f2f2f2;
+}
+
+.b-input > input[type="email"],
+.b-input > input[type="text"],
+.b-input > textarea {
+  background-color: rgba(245, 245, 245, 0);
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+.b-input > span {
+  font-size: 2rem;
+  flex-basis: 20%;
+}
+
+/*pc*/
+@media screen and (min-width: 750px) {
+  #start-site {
+    margin: 0px;
+    /* background-color: rgb(205 202 202); */
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "slider slider slider slider"
+      "d1 d2 d3 d4"
+      "cart cart cart cart"
+      "bewertun-container bewertun-container bewertun-container bewertun-container"
+      "Partners Partners Partners Partners"
+      "Info-Map Info-Map Info-Map Info-Map"
+      "footer footer footer footer";
+  }
+  .info-container {
+    grid-area: cart;
+    margin-bottom: 25px;
+    padding: 2% 5%;
+    display: grid;
+    grid-template-areas:
+      "h1 h1 h1"
+      "haupt-img haupt-img  img1" "haupt-img haupt-img  img2"
+      "haupt-img haupt-img  img3" "haupt-img haupt-img  img4";
+  }
+  .info-container > h1 {
+    color: var(--ancer_hover);
+    margin: 15px 0px;
+    /* grid-area: ; */
+  }
+  .haupt-cart {
+    width: 45vw;
+    grid-area: haupt-img;
+    color: var(--backG-Color);
+  }
+
+  .haupt-cart > img {
+    width: 45vw;
+    height: 40vh;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  .middle-cort1 {
+    display: flex; /* grid tamplet verändern !!! */
+    align-items: center;
+    grid-row: img1;
+    text-align: left;
+    color: var(--backG-Color);
+    margin-bottom: 10px;
+  }
+  .middle-cort1 > p {
+    float: right;
+    width: 219px;
+  }
+
+  .middle-cort1 > img {
+    float: left;
+    width: 150px;
+    height: 100px;
+    border-radius: 30px;
+  }
+  .middle-cort1 > img:hover,
+  .middle-cort1 > p:hover {
+    transform: scale(1.05);
+    color: black;
+  }
+  .cd {
+    grid-area: img1;
+  }
+  .cd1 {
+    grid-area: img2;
+  }
+  .cd2 {
+    grid-area: img3;
+  }
+  .cd3 {
+    grid-area: img4;
+  }
+  /*----- bewertung info box -----*/
+  .bewertun-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* -------- contact Box style -------- */
+
+  .info-container-contact {
+    grid-area: Info-Map;
+    padding: 0px 10%;
+    margin-bottom: 15px;
+  }
+  .inner-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .mail-box {
+    flex-basis: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    border-top-right-radius: 10px;
+    height: 100%;
+  }
+  .map {
+    flex-basis: 50%;
+  }
+}

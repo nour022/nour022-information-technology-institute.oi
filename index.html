@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/start.css" />
+    <title>information-technology-institute</title>
+  </head>
+  <body id="start-site">
+    <header>
+      <!-- ------ Erste Teil Menu ------ -->
+      <div class="menu_i">
+        <div class="abouticons">...</div>
+        <div class="sing_in">
+          <a href="auth/Registrieren.html"
+            ><span class="material-symbols-outlined"> lock </span> Staff only</a
+          >
+          <a href="auth/login.html"
+            ><span class="material-symbols-outlined"> lock </span>Sign in</a
+          >
+        </div>
+      </div>
+      <nav>
+        <div class="logo-box">
+          <img src="assets/img/logo.png" alt="logo" width="70" height="70" />
+          <p>
+            information technology <br />
+            institute
+          </p>
+        </div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="taster"
+              >Programs
+              <span class="material-symbols-outlined"> expand_more </span></a
+            >
+            <ul class="dropdown">
+              <li>
+                <a href="#"
+                  ><img src="assets/img/js.png" alt="js" />
+                  <p>JavaScript</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/html.png" alt="html" />
+                  <p>HTML5</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/css.png" alt="css" />
+                  <p>CSS</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/php.png" alt="php" />
+                  <p>PHP</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/sql.png" alt="" />
+                  <p>SQL</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/c.png" alt="" />
+                  <p>C#</p></a
+                >
+              </li>
+            </ul>
+
+            <script>
+              var taster = document.getElementsByClassName("taster")[0];
+              var dropdowns = document.getElementsByClassName("dropdown");
+
+              taster.addEventListener("click", function () {
+                for (var i = 0; i < dropdowns.length; i++) {
+                  if (dropdowns[i].style.display === "none") {
+                    dropdowns[i].style.display = "flex";
+                  } else {
+                    dropdowns[i].style.display = "none";
+                  }
+                }
+              });
+            </script>
+          </li>
+          <li><a href="news.html">IT|News</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------- silder ------->
+    <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/img/slider1.png" alt="silder" />
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            laudantium soluta sint! Culpa, aperiam! Et molestiae labore est
+            aliquid! Id nam iste soluta molestias doloremque?
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/img/slider2.png" alt="silder" />
+          <div class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora a
+            consequuntur sit dolorum! Expedita cumque totam necessitatibus
+            repellendus exercitationem vel mollitia sit veritatis deleniti quis?
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/img/slider3.png" alt="silder" />
+          <div class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+            provident, officiis cumque aliquam doloremque quod excepturi tempore
+            neque odit nam quae repellendus distinctio perferendis aspernatur.
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center" id="test">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </main>
+    <!------- INFO Boxs ------->
+    <div class="d1">
+      <span class="material-symbols-outlined"> supervisor_account </span>
+      <h3>Professional Training Programs</h3>
+    </div>
+    <div class="d2">
+      <span class="material-symbols-outlined"> school </span>
+      <h3>Intensive Training Programs</h3>
+    </div>
+    <div class="d3">
+      <span class="material-symbols-outlined"> alternate_email </span>
+      <h3>Professional Training Programs</h3>
+    </div>
+    <div class="d4">
+      <span class="material-symbols-outlined"> adjust </span>
+      <h3>Professional Training Programs</h3>
+    </div>
+    <!------- info IT|News ------->
+    <div class="info-container">
+      <h1>News</h1>
+      <!------- carts ------->
+      <div class="haupt-cart">
+        <img src="assets/img/slider1.png" alt="news" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          perspiciatis error at fugit nulla, laudantium nemo alias neque illum
+          magnam, illo porro explicabo saepe minima, corrupti architecto cum
+          dignissimos voluptates autem aliquam dolores voluptatem soluta harum
+          atque! Illum minus ratione eius quasi vel aperiam facilis odio itaque
+          ullam, expedita suscipit.
+        </p>
+      </div>
+      <div class="middle-cort1 cd">
+        <img src="assets/img/slider2.png" alt="img" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          numquam, eos rerum magni accusantium esse!
+        </p>
+      </div>
+      <div class="middle-cort1 cd1">
+        <img src="assets/img/slider1.png" alt="img" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          numquam, eos rerum magni accusantium esse!
+        </p>
+      </div>
+      <div class="middle-cort1 cd2">
+        <img src="assets/img/slider3.png" alt="img" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          numquam, eos rerum magni accusantium esse!
+        </p>
+      </div>
+      <div class="middle-cort1 cd3">
+        <img src="assets/img/slider2.png" alt="img" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          numquam, eos rerum magni accusantium esse!
+        </p>
+      </div>
+    </div>
+    <!------- Bewertung ------->
+    <div class="bewertun-container">
+      <div class="links">
+        <p>
+          <span class="material-symbols-outlined"> group </span>
+          <br />
+          1000 <br />
+          IT Professionals
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> apartment </span><br />
+          300<br />
+          Companies
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> bath_public_large </span>
+          <br />
+          20<br />
+          Publications
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> work </span> <br />
+          90<br />
+          IT job Profiles
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> stars </span> <br />
+          30<br />
+          IT Specializations
+        </p>
+        <p>
+          <span class="material-symbols-outlined">
+            connect_without_contact
+          </span>
+          <br />
+          80<br />
+          Yearly Innovative<br />Prototypes
+        </p>
+      </div>
+      <div class="recht"><h1>More than 5 years of Leadership</h1></div>
+    </div>
+
+    <!------- Our Partners ------->
+    <div class="partners-container">
+      <h1>Our Partners</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum nulla,
+        saepe error expedita adipisci, cupiditate inventore, ea fugiat harum
+        eius dignissimos quaerat accusantium doloribus temporibus pariatur
+        dicta. Nesciunt molestias magnam suscipit ratione praesentium aut.
+        Distinctio veritatis recusandae sint tenetur alias?
+      </p>
+      <div class="p_logo">
+        <p>
+          <span class="material-symbols-outlined"> account_balance </span>
+          <br />
+          Academic
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> insights </span>
+          <br />
+          Business
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> group_add </span>
+          <br />
+          Partners
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> public </span>
+          <br />
+          Global
+        </p>
+      </div>
+    </div>
+    <!------- kontact box ------->
+    <div class="info-container-contact">
+      <div class="inner-box">
+        <div class="mail-box">
+          <form action="">
+            <h1>Kontakt Infos</h1>
+            <div class="b-input">
+              <span class="material-symbols-outlined"> badge </span>
+              <input type="text" placeholder="Full Name" required />
+            </div>
+            <div class="b-input">
+              <span class="material-symbols-outlined"> mail </span>
+              <input type="email" placeholder="E-Mail-Adresse" required />
+            </div>
+            <div class="b-input">
+              <span class="material-symbols-outlined"> spa </span>
+              <textarea
+                name="massege"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Massege"
+              ></textarea>
+            </div>
+            <button>senden</button>
+          </form>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.421666706515!2d7.452225915814067!3d51.52382541732292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b91921ea6026ef%3A0x19f974db8b5ae727!2sAl-Sahaba%20Moschee!5e0!3m2!1sde!2sde!4v1677412375528!5m2!1sde!2sde"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!------- footer ------->
+    <footer>
+      <div></div>
+      <div class="box">
+        Contact us <br />
+        <a href="#"
+          ><span class="material-symbols-outlined"> home_pin </span>
+          Deutschland, Aleyzer str. 167 ,67549 Worms</a
+        >
+        <a href="#"
+          ><span class="material-symbols-outlined"> call </span> +(000)000000</a
+        >
+        <a href="#"
+          ><span class="material-symbols-outlined"> mail </span>
+          email@gmail.com</a
+        >
+      </div>
+      <div>
+        Follow us <br />
+        <div class="scozialM">
+          <a href="#"
+            ><img src="assets/img/facebook-icon.png" alt="" width="15"
+          /></a>
+
+          <a href="#"
+            ><img src="assets/img/instagram-icon.png" alt="" width="15"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!------- all script ------->
+    <script src="assets/js/silder.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@import url("style.css");
+
+/*--------Login-------*/
+
+body {
+  /* qualle https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a/ */
+  background: linear-gradient(var(--backG-Color), transparent),
+    linear-gradient(to top left, var(--ancer_hover), transparent),
+    linear-gradient(to top right, var(--fontColorW), transparent);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-box {
+  width: 400px;
+  text-align: center;
+  background: var(--backG-Color); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c3e50,
+    var(--fontColorW)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2c3e50, var(--fontColorW));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid var(--ancer_hover);
+  border-radius: 30px;
+}
+.login-box > * {
+  margin-bottom: 10px;
+}
+.logo-box > p {
+  color: var(--fontColorW);
+}
+form {
+  width: 80%;
+}
+form > * {
+  margin-bottom: 10px;
+}
+form > button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: var(--fontColorW);
+  border-radius: 5px;
+  background-color: var(--ancer_hover);
+  box-shadow: 29px 29px 58px #bebebe, -29px -29px 58px #ffffff;
+}
+.b-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: 41px 41px 82px #cecece, -41px -41px 82px #f2f2f2;
+}
+
+.b-input > input[type="email"],
+.b-input > input[type="text"],
+.b-input > input[type="password"] {
+  background-color: rgba(245, 245, 245, 0);
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+.b-input > span {
+  font-size: 2rem;
+  flex-basis: 20%;
+}
+
+#img_logo {
+  width: 100px;
+  height: 100px;
+  border-right: 0;
+}
+a {
+  color: var(--ancer_hover);
+}
