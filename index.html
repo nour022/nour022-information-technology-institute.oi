@@ -84,10 +84,10 @@
 
               taster.addEventListener("click", function () {
                 for (var i = 0; i < dropdowns.length; i++) {
-                  if (dropdowns[i].style.display === "none") {
-                    dropdowns[i].style.display = "flex";
-                  } else {
+                  if (dropdowns[i].style.display === "flex") {
                     dropdowns[i].style.display = "none";
+                  } else {
+                    dropdowns[i].style.display = "flex";
                   }
                 }
               });
