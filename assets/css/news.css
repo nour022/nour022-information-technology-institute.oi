@@ -54,12 +54,19 @@
 }
 input[type="submit"],
 button {
+      border-top-right-radius: 30px;
   margin: 15px;
   padding: 10px 20px;
   font-size: 1.5rem;
   border: none;
   color: var(--fontColorW);
   background-color: var(--ancer_hover);
+}
+button:hover{
+  transform: scale(1.02);
+    font-size: 1.6rem;
+  font-weight:900;
+
 }
 .material-symbols-outlined {
   font-weight: 900;
