@@ -361,6 +361,7 @@ form > button {
   .middle-cort1 > p {
     float: right;
     width: 219px;
+    margin-left:10px;
   }
 
   .middle-cort1 > img {
